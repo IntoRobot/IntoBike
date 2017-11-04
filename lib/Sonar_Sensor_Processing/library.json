@@ -1,0 +1,24 @@
+{
+    "name": "Sonar_Sensor_Processing",
+    "version": "1.0.0",
+    "keywords": "sonar",
+    "description": "sonar sensor process",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "dependencies":
+    [
+        {
+            "name": "HC_SR04",
+            "frameworks": "arduino"
+        },
+        {
+            "name": "MeanFilter",
+            "frameworks": "arduino"
+        }
+    ],
+    "frameworks": "arduino",
+    "platforms": "*"
+}
+

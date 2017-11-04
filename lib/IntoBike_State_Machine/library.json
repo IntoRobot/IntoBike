@@ -1,0 +1,12 @@
+{
+    "name": "IntoBike_State_Machine",
+    "version": "1.0.0",
+    "keywords": "machine",
+    "description": "the state machine for IntoBike",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}

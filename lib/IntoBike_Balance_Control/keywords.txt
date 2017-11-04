@@ -1,0 +1,31 @@
+#######################################
+# Syntax Coloring Map For IntoRobot
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+ BalanceControl   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# methods names in commond
+begin   KEYWORD2
+restart  KEYWORD2
+getDebugInfo  KEYWORD2
+setParams  KEYWORD2
+setMoveDirection  KEYWORD2
+setRotateDirection  KEYWORD2
+doControl  KEYWORD2
+velocityController  KEYWORD2
+balanceController  KEYWORD2
+turn  KEYWORD2
+meanFilter  KEYWORD2
+boundRotationAccel  KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

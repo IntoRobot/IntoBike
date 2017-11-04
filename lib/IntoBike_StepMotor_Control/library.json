@@ -1,0 +1,12 @@
+{
+    "name": "IntoBike_StepMotor_Control",
+    "version": "1.0.0",
+    "keywords": "motor",
+    "description": "control interfaces for step motor",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}

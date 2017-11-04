@@ -1,0 +1,31 @@
+{
+    "name": "IntoBike_OledDisplay",
+    "version": "1.0.0",
+    "keywords": "oledDispaly",
+    "description": "Oled display class for IntoBike",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "dependencies":
+    [
+        {
+            "name": "Adafruit_SSD1306",
+            "frameworks": "arduino"
+        },
+        {
+            "name": "IntoBike_State_Machine",
+            "frameworks": "arduino"
+        },
+        {
+            "name": "MeanFilter",
+            "frameworks": "arduino"
+        },
+        {
+            "name": "IntoBike_Balance_Control",
+            "frameworks": "arduino"
+        }
+    ],
+    "frameworks": "arduino",
+    "platforms": "*"
+}

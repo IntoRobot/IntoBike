@@ -1,0 +1,12 @@
+{
+    "name": "Adafruit_SSD1306",
+    "version": "1.0.0",
+    "keywords": "OLED,SSD1306",
+    "description": "SSD1306",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}

@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map For IntoRobot
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+ IntoBikeOledDisplay   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# methods names in commond
+begin   KEYWORD2
+init  KEYWORD2
+displayData  KEYWORD2
+displayLogo  KEYWORD2
+readVoltage  KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

@@ -1,0 +1,36 @@
+#######################################
+# Syntax Coloring Map For IntoRobot
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+ WidgetJoypad   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# methods names in commond
+begin   KEYWORD2
+getUpkey  KEYWORD2
+getDownkey  KEYWORD2
+getLeftkey  KEYWORD2
+getRightkey  KEYWORD2
+getFnkey1  KEYWORD2
+getFnkey2  KEYWORD2
+getFnkey3  KEYWORD2
+getFnkey4  KEYWORD2
+getFnkey5  KEYWORD2
+getFnkey6  KEYWORD2
+getLeftJoystickX  KEYWORD2
+getLeftJoystickY  KEYWORD2
+getRightJoystickX  KEYWORD2
+getRightJoystickY  KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+

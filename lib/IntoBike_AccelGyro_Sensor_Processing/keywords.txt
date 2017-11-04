@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For IntoRobot
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+ AccelGyroSensorProcessing   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# methods names in commond
+begin   KEYWORD2
+init  KEYWORD2
+getRawData  KEYWORD2
+doMeasurement  KEYWORD2
+processData  KEYWORD2
+getFilteredData  KEYWORD2
+kalmanFilter  KEYWORD2
+complementaryFilter  KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

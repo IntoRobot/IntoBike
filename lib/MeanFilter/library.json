@@ -1,0 +1,12 @@
+{
+    "name": "MeanFilter",
+    "version": "1.0.0",
+    "keywords": "MeanFilter",
+    "description": "Mean Filter",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}

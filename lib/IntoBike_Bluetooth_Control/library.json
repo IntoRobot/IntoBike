@@ -1,0 +1,12 @@
+{
+    "name": "IntoBike_Bluetooth_Control",
+    "version": "1.0.0",
+    "keywords": "bluetooth",
+    "description": "Control robot through Bluetooth module",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}

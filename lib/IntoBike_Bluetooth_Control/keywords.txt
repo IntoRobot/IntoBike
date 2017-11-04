@@ -1,0 +1,19 @@
+#######################################
+# Syntax Coloring Map For IntoRobot
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# methods names in commond
+bluetoothDataReady  KEYWORD2
+processBluetoothData  KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

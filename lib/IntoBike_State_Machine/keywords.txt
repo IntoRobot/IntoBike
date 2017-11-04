@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map For IntoRobot
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+ IntoBikeStateMachine   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# methods names in commond
+begin   KEYWORD2
+update  KEYWORD2
+getCurrentState  KEYWORD2
+detectFallDown  KEYWORD2
+detectObstacle  KEYWORD2
+detectPutDown  KEYWORD2
+detectStandUp  KEYWORD2
+detectPickUp  KEYWORD2
+getInfo  KEYWORD2
+detectEvent  KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

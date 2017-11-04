@@ -1,0 +1,13 @@
+{
+    "name": "WidgetJoypad",
+    "version": "1.0.0",
+    "keywords": "Widget,Joypad",
+    "description": "虚拟手柄应用库",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}
+

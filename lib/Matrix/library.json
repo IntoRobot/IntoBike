@@ -1,0 +1,12 @@
+{
+    "name": "Matrix",
+    "version": "1.0.0",
+    "keywords": "Matrix",
+    "description": "Matrix operations",
+    "authors": {
+        "name": "robin",
+        "email": "robin@molmc.com"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}
