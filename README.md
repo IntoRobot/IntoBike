@@ -1,12 +1,12 @@
-# selfBalancedCar
+# IntoBike
 
 ## 1. 概述
 
-selfBalancedCar是IntoBike平衡车工程。主控采取neutron模块。
+IntoBike是IntoRobot平衡车工程。主控采取neutron模块。
 
 ## 2. 工程结构
 
-selfBalancedCar 工程结构如下：
+IntoBike工程结构如下：
 
 ```
 |-- docs            : 工程文档
@@ -19,7 +19,7 @@ selfBalancedCar 工程结构如下：
 
 ## 3. 编译与调试
 
-selfBalancedCar 采取intoyuniot编译，具体如下：
+IntoBike 采取intoyuniot编译，具体如下：
 
 ```
 intoyuniot run -e intorobot-neutron -t clean   # 清除临时文件
