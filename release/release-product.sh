@@ -34,9 +34,9 @@ release_product() {
 
     cd $RELEASE_DIR
     if [ "$1"x = "intobike"x ];then
-        intoyuniot run -d .. -e intorobot-neutron -t clean
-        intoyuniot run -d .. -e intorobot-neutron
-        cp ../.intoiotenvs/intorobot-neutron/firmware.bin $RELEASE_PRODUCT_VERSION_DIR
+        intoyuniot run -d .. -e intobike -t clean
+        intoyuniot run -d .. -e intobike
+        cp ../.intoiotenvs/intobike/firmware.bin $RELEASE_PRODUCT_VERSION_DIR
         cp -rf $RELEASE_COMMON_DIR/tools/stlink $RELEASE_PRODUCT_VERSION_DIR/tools
         cp -rf $RELEASE_COMMON_DIR/tools/upload-reset $RELEASE_PRODUCT_VERSION_DIR/tools
         cp -rf $RELEASE_COMMON_DIR/tools/dfu-util $RELEASE_PRODUCT_VERSION_DIR/tools
