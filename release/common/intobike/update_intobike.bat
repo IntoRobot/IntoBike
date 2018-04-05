@@ -3,7 +3,7 @@
 set ST_TOOL=tools/stlink/win/st-flash.exe
 set UPLOAD_RESET_TOOL=tools/upload-reset/win/upload-reset.exe
 set DFU_TOOL=tools/dfu-util/win/dfu-util.exe
-set DFUSUFFIX=tools/dfu-util/win/dfu-suffix.exe
+set DFUSUFFIX_TOOL=tools/dfu-util/win/dfu-suffix.exe
 
 ::下载参数
 set UPLOAD_PORT=COM1
@@ -29,7 +29,7 @@ set /p usart_port=请输入串口(回车默认输入COM1):
 set UPLOAD_PORT=%usart_port%
 
 copy firmware.bin firmware.dfu >nul 2>nul
-"%DFUSUFFIX%" -v 0483 -p df11 -a firmware.dfu >nul 2>nul
+"%DFUSUFFIX_TOOL%" -v 0483 -p df11 -a firmware.dfu >nul 2>nul
 set /p=下载应用程序   ... <nul
 "%UPLOAD_RESET_TOOL%" -p %UPLOAD_PORT% -b 19200 -t 2000 >nul 2>nul
 "%DFU_TOOL%" -d 0x0483:0xdf11 -a 0 -R -s 0x08020000:leave -D firmware.dfu >nul 2>nul
@@ -43,7 +43,7 @@ goto update_end
 :all_update_start
 
 set /p=下载Bootloader ... <nul
-"%ST_TOOL%" write boot.bin 0x8000000 >nul 2>nul
+"%ST_TOOL%" write boot-v3.bin 0x8000000 >nul 2>nul
 if %errorlevel%==0 (
 echo 成功
 ) else (
@@ -64,7 +64,7 @@ goto update_end
 
 :update_end
 
-if errorlevel 0 (
+if %errorlevel%==0 (
     echo -------下载成功------
 ) else (
     echo -------下载失败------

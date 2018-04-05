@@ -20,7 +20,7 @@ if [ $sysType = "Darwin" ]; then    # osx
     UPLOAD_RESET_TOOL=./tools/upload-reset/osx/upload-reset
     ST_TOOL=./tools/stlink/osx/st-flash
     DFU_TOOL=./tools/dfu-util/osx/dfu-util
-    DFUSUFFIX=./tools/dfu-util/osx/dfu-suffix
+    DFUSUFFIX_TOOL=./tools/dfu-util/osx/dfu-suffix
     SUDO=
     #下载参数
     UPLOAD_PORT=/dev/cu.usbmodem1411
@@ -29,7 +29,7 @@ else    #linux
     UPLOAD_RESET_TOOL=./tools/upload-reset/linux64/upload-reset
     ST_TOOL=./tools/stlink/linux64/st-flash
     DFU_TOOL=./tools/dfu-util/linux64/dfu-util
-    DFUSUFFIX=./tools/dfu-util/linux64/dfu-suffix
+    DFUSUFFIX_TOOL=./tools/dfu-util/linux64/dfu-suffix
     SUDO=sudo
     #下载参数
     UPLOAD_PORT=/dev/ttyACM0
@@ -54,7 +54,7 @@ case "$select_type" in
             UPLOAD_PORT=$usart_port
         fi
         cp firmware.bin firmware.dfu
-        $DFUSUFFIX -v 0483 -p df11 -a firmware.dfu &>/dev/null
+        $DFUSUFFIX_TOOL -v 0483 -p df11 -a firmware.dfu &>/dev/null
         cecho "下载应用程序 ... \c" $green
         $UPLOAD_RESET_TOOL -p $UPLOAD_PORT -b 19200 -t 2000 &>/dev/null
         $SUDO $DFU_TOOL -d 0x0483:0xdf11 -a 0 -R -s 0x08020000:leave -D firmware.dfu &>/dev/null
@@ -69,7 +69,7 @@ case "$select_type" in
 
     2)
         cecho "下载bootloader ... \c" $green
-        $SUDO $ST_TOOL write boot.bin 0x8000000 &>/dev/null
+        $SUDO $ST_TOOL write boot-v3.bin 0x8000000 &>/dev/null
         if [ $? = 0 ]; then
             cecho "成功" $yellow
             sleep 1
