@@ -22,9 +22,9 @@ IntoBike工程结构如下：
 IntoBike 采取intoyuniot编译，具体如下：
 
 ```
-intoyuniot run -e intorobot-neutron -t clean   # 清除临时文件
+intoyuniot run -e intobike -t clean   # 清除临时文件
 
-intoyuniot run -e intorobot-neutron -t upload  # 编译和下载
+intoyuniot run -e intobike -t upload  # 编译和下载
 
 ```
 
